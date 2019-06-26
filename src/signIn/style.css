@@ -1,0 +1,23 @@
+#forSignUp {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10%;
+  font-family: Lato;
+  font-size: 18px;
+}
+
+#userName, #password, #email, #referralCode {
+  box-shadow: 0px 12px 6px #DBDBDB;
+  margin-bottom: 35px;
+}
+.signin{
+  
+  margin-top: 20px;
+}
+#login{
+  float: left;
+}
+#forgot{
+  float: right;
+
+}
