@@ -30,11 +30,10 @@ class SignUp extends React.Component {
     };
 
     Register = async e => {
-        // e.preventDefault();
         try {
             e.preventDefault();
             console.log("method called");
-            history.push("userDashboard");
+            history.push("user");
             
         } catch (e) {
             alert(e.message);
@@ -63,10 +62,7 @@ class SignUp extends React.Component {
                         </div>
                     </form>
                 </div>
-                <div class="signin">
-                    {/* <a href="" id="login">Login</a>
-                    <a href="" id="forgot">Forgot</a> */}
-                    
+                <div class="signin">                    
                     <NavLink to="/signIn" id="login">Sign In</NavLink> 
                     <NavLink to="/resetPassword" id="forgot">Forgot</NavLink> 
 

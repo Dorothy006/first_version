@@ -10,7 +10,8 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import SignUp from "../src/signIn/signUp";
 import SignIn from "../src/signIn/signIn";
 import ResetPassword from "../src/signIn/resetPassword";
-import Layout from "../src/layout/layout";
+import UserLayout from "./layout/userLayout";
+import Dashboard from "../src/views/dashboard";
 
 const hist = createBrowserHistory();
 
@@ -29,7 +30,9 @@ class App extends Component {
             <Route path="/signUp" component={SignUp} />
             <Route path="/signIn" component={SignIn} />
             <Route path="/resetPassword" component={ResetPassword} />
-            <Route exact path="/userDashboard" component={Layout} />
+            <Route exact path="/user" component={UserLayout} />
+
+            {/* <Route path="/dashboard" component={Dashboard}/>  */}
           </Switch>
 
 

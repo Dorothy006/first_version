@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@coreui/icons": "^0.3.0",
     "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
     "history": "^4.7.2",
+    "prop-types": "^15.7.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",

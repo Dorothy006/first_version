@@ -1,5 +1,5 @@
 
-import DashboardPage from "../views/dashboard";
+import Dashboard from "../views/dashboard";
 
 
 const dashboardRoutes = [
@@ -7,8 +7,8 @@ const dashboardRoutes = [
     path: "/dashboard",
     name: "Dashboard",
     // icon: Dashboard,
-    component: DashboardPage,
-    // layout: "/admin"
+    component: Dashboard,
+    layout: "/user"
   }
 ];
 
