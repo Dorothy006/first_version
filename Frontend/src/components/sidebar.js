@@ -30,7 +30,6 @@ class Sidebar extends React.Component {
 
                         <li id="li_Affiliates" class="nav-item">
                             <i className="fa fa-empire"></i>
-                            {/* <i class="fas fa-steering-wheel"></i> */}
                             <span>Affiliates</span>
                         </li>
                         <li id="li_Stats" class="nav-item">
