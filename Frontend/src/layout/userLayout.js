@@ -3,9 +3,11 @@
 import React from "react";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
+import Footer from "./footer"
 import Sidebar from "../components/sidebar";
-
 import routes from "../userRoute/route";
+
+import "../layout/layout.css"
 
 
 const switchRoutes = (
@@ -24,21 +26,33 @@ const switchRoutes = (
   </Switch>
 );
 
+/////////////////////////////
 class Dashboard extends React.Component {
-  
-    render() {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     const { classes, ...rest } = this.props;
     return (
-      <div className="something">
-        <Sidebar
-          routes={routes}          
-          {...rest}
-        />
-        
+      <div className="wrapper">
+        <div className="sidebarContainer">
+          <Sidebar  />
+        </div>
+        <div className="mainPanel">
+          <div className="content">
+
+          </div>
+          <div className="forFooter">
+            <Footer />
+          </div>
+        </div>
       </div>
     );
   }
 }
+
+
+
 
 Dashboard.propTypes = {
   classes: PropTypes.object.isRequired

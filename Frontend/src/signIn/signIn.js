@@ -47,9 +47,6 @@ class SignIn extends React.Component {
           </form>
       </div>
       <div class="signin">
-          {/* <a href="" id="login">Login</a>
-          <a href="" id="forgot">Forgot</a> */}
-          
           <NavLink to="/signUp" id="login">Sign Up</NavLink> 
           <NavLink to="/resetPassword" id="forgot">Forgot</NavLink> 
 

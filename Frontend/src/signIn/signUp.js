@@ -49,7 +49,7 @@ class SignUp extends React.Component {
             console.log(this.state.email,this.state.userName,this.state.password,this.state.referralCode);
             this.ValidateInput(this.state.email);
             //save uerinfo to the mysqldb
-            // history.push("user");
+            history.push("user");
 
         } catch (e) {
             alert(e.message);
@@ -62,7 +62,7 @@ class SignUp extends React.Component {
                 <div >
                     <form onSubmit={this.Register}>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="userName" placeholder="UerName" value = {this.state.userName} onChange={this.handleChange}></input>
+                            <input type="text" class="form-control" name="userName" placeholder="UserName" value = {this.state.userName} onChange={this.handleChange}></input>
                         </div>
                         <div class="form-group">
                             <input type="password" class="form-control" name="password" placeholder="Password" value = {this.state.password} onChange={this.handleChange}></input>

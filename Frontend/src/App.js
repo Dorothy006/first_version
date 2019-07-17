@@ -10,7 +10,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import SignUp from "../src/signIn/signUp";
 import SignIn from "../src/signIn/signIn";
 import ResetPassword from "../src/signIn/resetPassword";
-import PrivateRoute from "../src/auth/privateRoute ";
+// import PrivateRoute from "../src/auth/privateRoute ";
 import UserLayout from "./layout/userLayout";
 import Dashboard from "../src/views/dashboard";
 
@@ -32,9 +32,9 @@ class App extends Component {
             <Route path="/signIn" component={SignIn} />
             <Route path="/resetPassword" component={ResetPassword} />
             <Route exact path="/user" component={UserLayout} />
-            <PrivateRoute exact path='/dashboard' component={Dashboard}/>
+            {/* <PrivateRoute exact path='/dashboard' component={Dashboard}/> */}
 
-            {/* <Route path="/dashboard" component={Dashboard}/>  */}
+            <Route path="/dashboard" component={Dashboard}/> 
           </Switch>
 
 

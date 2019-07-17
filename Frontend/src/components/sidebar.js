@@ -6,26 +6,11 @@ class Sidebar extends React.Component {
 
     render() {
         return (
-            <body>
-                {/* static navbar - bottom */}
                 <div>
-                    <Nav className="navbar fixed-top nav-secondary is-dark is-light-text" id="bottom_navbar">
-                        <Container className="text-medium">Dashboard</Container>
-                        <Container className="text-medium">Affiliates</Container>
-                        <Container className="text-medium">Stats</Container>
-                        <Container className="text-medium">Exchange</Container>
-                        <Container className="text-medium">Contact</Container>
-                        <Container className="text-medium">Logout</Container>
-                        <Container className="text-medium">Referral Code</Container>
-                    </Nav>
-                </div>
-                {/* sidebar */}
-                <div id="wrapper">
-
                     <ul class="sidebar navbar-nav" >
                         <li id="li_dashboard" class="nav-item">
                             <i className="fa fa-home"></i>
-                            <span>Dashboard</span>
+                            <Link to="/dashboard" className="link"><span>Dashboard</span></Link> 
                         </li>
 
                         <li id="li_Affiliates" class="nav-item">
@@ -74,8 +59,6 @@ class Sidebar extends React.Component {
                         </li>
                     </ul>
                 </div>
-
-            </body>
         );
     }
 }
